@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Web</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1><span>A</span>hmed.</h1>
+                <ul id="sideMenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-times" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+        </div>
+        <div class="header_text">
+            <p>Web Developer</p>
+            <h1>Hi, I'm <span>Ahmed</span> Ali<br>From Pakistan.</h1>
+        </div>
+    </div>
+
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about_col_1">
+                    <img src="images/image1.png">
+                </div>
+                <div class="about_col_2">
+                    <h1 class="sub_title">About Me</h1>
+                    <p>Intermediate Full Stack Web Developer excited at the prospect
+                        of developing web applications and programming web in a
+                        professional setting. Detail-oriented worker recognized by
+                        peers for my effective creative thinking and multitasking skills. Looking to apply my understanding of Application Development
+                        and Database Development at your company.</p>
+
+                    <div class="tab_titles">
+                        <p class="tab_links active_link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab_links" onclick="openTab('education')">Education</p>
+                        <p class="tab_links" onclick="openTab('experience')">Experience</p>
+                    </div>
+                    <div class="tab_contents active_tab" id="skills">
+                        <ul>
+                            <li><span>FrontEnd</span><br>Html, Css, JavaScript, Bootstrap</li>
+                            <li><span>BackEnd</span><br>C#, Asp.Net, Php</li>
+                            <li><span>Database</span><br>MS SQL, MySQL</li>
+                        </ul>
+                    </div>
+                    <div class="tab_contents" id="education">
+                        <ul>
+                            <li><span>2024 | Diploma in Software Engineer (ACCP)</span><br>Aptech Learning</li>
+                            <li><span>2019 | Intermediate</span><br>Gov't Degree Boys College</li>
+                            <li><span>2017 | Matriculation</span><br>L'ycos Grammer School</li>
+                        </ul>
+                    </div>
+                    <div class="tab_contents" id="experience">
+                        <ul>
+                            <li><span>2024-Present</span><br>Phantom Cave Studio</li>
+                            <li><span>1/2024-5/2024</span><br>Freelance Work</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- services -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub_title">My Services</h1>
+            <div class="services_list">
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Web Design</h2>
+                    <p>Web Designing is used to make static websites. It is also used to design for FrontEnd projects.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Web Development is used to make dynamic websites. It is also used to develop for BackEnd projects.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Development</h2>
+                    <p>App Development is used to make apps for android and IOS applications.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <!-- portfolio -->
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub_title">My Work</h1>
+            <div class="work_list">
+                <div class="work">
+                    <img src="images/image4.jpg" alt="">
+                    <div class="sample">
+                        <h3>Courier System</h3>
+                        <p>This courier web project is dynamic web and is developed with Php and My SQL.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/image3.PNG" alt="">
+                    <div class="sample">
+                        <h3>Supermarket Store</h3>
+                        <p>This Supermarket web project is dynamic website and is developed with .Net and MS SQL.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/image5.PNG" alt="">
+                    <div class="sample">
+                        <h3>Rock Paper Sessior</h3>
+                        <p>This game is made with GUI interface and is developed with in Python.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+     </div>
+
+     <!-- contact -->
+      <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="left_col">
+                    <h1 class="sub_title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> syedahmedali202@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 03302037917</p>
+                    <div class="social_icons">
+                        <a href="http://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="http://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="http://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Ahmed.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="right_col">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Input Name" required>
+                        <input type="email" name="Email" placeholder="Input Email" required>
+                        <textarea name="Message" rows="6" placeholder="Input Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright &copy; <script>document.write(new Date().getFullYear())</script> Made with <i class="fa-solid fa-heart"></i> by Syed Ahmed Ali</p>
+        </div>
+      </div>
+
+    <script>
+
+        var tabLinks = document.getElementsByClassName("tab_links");
+        var tabContents = document.getElementsByClassName("tab_contents");
+
+        function openTab(tabName){
+            for(tabLink of tabLinks){
+                tabLink.classList.remove('active_link');
+            }
+            for(tabContent of tabContents){
+                tabContent.classList.remove('active_tab');
+            }
+            event.currentTarget.classList.add('active_link');
+            document.getElementById(tabName).classList.add('active_tab')
+        }
+        
+        <!-- -----side menu----- -->
+        var menu = document.getElementById("sideMenu");
+
+        function openMenu(){
+            menu.style.right = '0';
+        }
+
+        function closeMenu(){
+            menu.style.right = '-200px';
+        }
+
+    </script>
+    
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw3T_i-0oU9XRqVwudLcY9mIQE6R83ttiEHysNZtKnIb2UQansmujIrCghHBCC8jU1C/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message has been sent!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000
+                )
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+
+</html>
